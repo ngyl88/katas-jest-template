@@ -13,9 +13,7 @@ const mostFrequent = array => {
       mapFrequency.set(key, valueFrequency);
       if (valueFrequency > maxFrequency) {
         maxFrequency = valueFrequency;
-        // mapFrequency.clear(); // clear Map so as to re-set it to the key with the max frequency
-        // mapFrequency.set(key, valueFrequency);
-        mostFrequentElement.clear(); // clear Map so as to re-set it to the key with the max frequency
+        mostFrequentElement.clear(); // clear results so as to fill it with the key with the max frequency
         mostFrequentElement.add(key); // keep track of the max key
       } else if (valueFrequency === maxFrequency) {
         mostFrequentElement.add(key);
